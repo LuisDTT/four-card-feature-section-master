@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+.main {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  padding: 0 2em;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: #fafafa; }
+
+.info {
+  justify-self: center;
+  text-align: center;
+  color: #4c4e61;
+  max-width: 550px; }
+  .info__title-1 {
+    font-weight: 200;
+    margin-bottom: 0;
+    font-size: 1.5rem; }
+  .info__title-2 {
+    margin-top: 8px;
+    font-size: 1.5rem; }
+  .info__text {
+    color: #a3a5ae;
+    line-height: 1.5rem; }
+
+.section {
+  margin: 4em 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 1.5em; }
+  .section__card {
+    padding: 1.7em;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 15px;
+    box-shadow: 0 7px 20px 0 rgba(163, 165, 174, 0.4);
+    display: flex;
+    flex-direction: column; }
+    .section__card-title {
+      margin: 0; }
+    .section__card-text {
+      color: #a3a5ae;
+      font-size: 14px;
+      line-height: 1.4rem;
+      margin-top: 8px; }
+    .section__card-image {
+      align-self: flex-end;
+      margin-top: 1.3em; }
+    .section__card--supervisor {
+      border-top: 4px solid #45d3d3; }
+    .section__card--team-builder {
+      border-top: 4px solid #ea5353; }
+    .section__card--karma {
+      border-top: 4px solid #fcaf4a; }
+    .section__card--calculator {
+      border-top: 4px solid #549ef2; }
+
+.footer {
+  position: fixed;
+  bottom: 0; }
+  .footer__attribution {
+    margin: 0;
+    font-size: 12px; }
+
+@media screen and (min-width: 600px) {
+  .section {
+    grid-template-columns: repeat(2, minmax(100px, 1fr)); } }
+@media screen and (min-width: 1000px) {
+  .info {
+    justify-self: center;
+    text-align: center;
+    color: #4c4e61;
+    max-width: 550px; }
+    .info__title-1 {
+      font-weight: 200;
+      margin-bottom: 0;
+      font-size: 2.4rem; }
+    .info__title-2 {
+      margin-top: 8px;
+      font-size: 2.4rem; }
+    .info__text {
+      color: #a3a5ae;
+      line-height: 1.5rem; }
+
+  .section {
+    grid-template-columns: repeat(3, 330px);
+    margin: 3em 1em;
+    gap: 2em; }
+    .section__card-image {
+      margin-top: 2em; }
+    .section__card--supervisor {
+      grid-row: span 2;
+      align-self: center; }
+    .section__card--calculator {
+      grid-column: 3/4;
+      grid-row: 1/3;
+      align-self: center; }
+    .section__card--karma {
+      grid-column: 2/3; } }
+
+/*# sourceMappingURL=main.css.map */

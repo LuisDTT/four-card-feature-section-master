@@ -1,0 +1,67 @@
+.main
+	font-family: 'Poppins', sans-serif
+	font-size: 15px
+	min-height: 100vh
+	padding: 0 2em
+	display: grid
+	justify-content: center
+	align-content: center
+	background: $very-light-gray
+
+.info
+	justify-self: center
+	text-align: center
+	color: $very-dark-blue
+	max-width: 550px
+	&__title-1
+		font-weight: 200
+		margin-bottom: 0
+		font-size: 1.5rem
+
+	&__title-2
+		margin-top: 8px
+		font-size: 1.5rem
+	&__text
+		color: $grayish-blue
+		line-height: 1.5rem
+
+.section
+	margin: 4em 0
+	display: grid
+	justify-content: center
+	align-content: center
+	gap: 1.5em
+	&__card
+		padding: 1.7em
+		border-radius: 5px
+		background: #fff
+		font-size: 15px
+		box-shadow: 0 7px 20px 0 hsla(229, 6%, 66%, .4)
+		display: flex
+		flex-direction: column
+		&-title
+			margin: 0
+		&-text
+			color: $grayish-blue
+			font-size: 14px
+			line-height: 1.4rem
+			margin-top: 8px
+		&-image
+			align-self: flex-end
+			margin-top: 1.3em
+		&--supervisor
+			border-top: 4px solid $cyan
+		&--team-builder
+			border-top: 4px solid $red
+		&--karma
+			border-top: 4px solid $orange
+		&--calculator
+			border-top: 4px solid $blue
+
+
+.footer
+	position: fixed
+	bottom: 0
+	&__attribution
+		margin: 0
+		font-size: 12px
